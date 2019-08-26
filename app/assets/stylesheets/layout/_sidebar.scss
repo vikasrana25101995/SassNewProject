@@ -1,0 +1,30 @@
+.sidebar-section
+{
+	position: fixed;
+}
+
+.sidebar
+{
+	width: 18vw;
+	max-height: 100vh;
+	overflow-y:auto;
+}
+
+.sidebar-list__list-item
+{
+	padding: 16px 0px 16px 37px;
+	border-left: 5px solid white;
+	&--border-left-color
+	{
+		border-left: 5px solid #5e5399;
+	}
+}
+
+
+
+.sidebar--body
+{
+	width: 82vw;
+	margin-left: 18vw;
+	background-color: #f5f2f5;
+}
