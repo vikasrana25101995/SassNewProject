@@ -62,7 +62,7 @@ $(document).ready(function()
 {	
 
 	// $(document).on("click",".sidebar-list__list-item",function()
-	$(".sidebar-list__list-item").click(function()
+	$(".sidebar-list__list-item").hover(function()
 		{	
 			sidebar = new Sidebar(); 	
 			sidebar.comp1= this;

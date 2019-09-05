@@ -1,18 +1,20 @@
+$sidebar-height: 40vh;
+$sidebar-width: 70px;
 .sidebar__imageSection
 {
-	height:40vh;	
+	height:$sidebar-height;	
 	background-image: linear-gradient(to right bottom,#7851a5,#b04db7);
 	clip-path: circle(50% at 30% 30%);
 	padding: 20% 0px 0px 12%;
 }
-
+@if($sidebar-width < 100){
 .sidebar__userimage
 {
-	width:70px;
+	width:$sidebar-width;
 	border-radius:50%;
 	margin-left: 12% ;
 }
-
+}
 .sidebar-list
 {
 	list-style-type: none;	
