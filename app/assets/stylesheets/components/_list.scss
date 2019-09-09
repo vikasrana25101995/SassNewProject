@@ -1,5 +1,7 @@
 $sidebar-height: 40vh;
 $sidebar-width: 70px;
+
+
 .sidebar__imageSection
 {
 	height:$sidebar-height;	
@@ -7,19 +9,21 @@ $sidebar-width: 70px;
 	clip-path: circle(50% at 30% 30%);
 	padding: 20% 0px 0px 12%;
 }
-@if($sidebar-width < 100){
-.sidebar__userimage
+
+@if($sidebar-width < 100)
 {
-	width:$sidebar-width;
-	border-radius:50%;
-	margin-left: 12% ;
+	.sidebar__userimage
+	{
+		width:$sidebar-width;
+		border-radius:50%;
+		margin-left: 12% ;
+	}
 }
-}
+
 .sidebar-list
 {
 	list-style-type: none;	
 }
-
 
 .sublist
 {
