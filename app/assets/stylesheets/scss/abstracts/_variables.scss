@@ -1,0 +1,24 @@
+/*** Colors ***/
+$white:  #fff !default;
+$black:  #111618 !default;
+
+/*** Create grayscale ***/
+$gray-dark: #292b2c !default;
+$gray: #464a4c !default;
+$gray-light: #636c72 !default;
+$gray-lighter: #eceeef !default;
+$gray-lightest: #f7f7f9 !default;
+
+$green: #aebc46;
+$brand-primary: $green;
+$link-color: $white;
+$body-bg: $gray-dark;
+
+
+/**** Font Sizes ***/
+
+$font-size: 16px !default;
+
+
+$show-header-bg:true;
+$header-bg: url('/assets/bg/header140.png');
