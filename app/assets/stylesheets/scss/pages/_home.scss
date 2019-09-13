@@ -1,0 +1,36 @@
+.home-page
+{
+	&__content
+	{
+		position:relative;
+		top:116px;
+	}
+}
+
+.order-placed
+{
+	position: absolute;
+	top:90%;
+	left:50%;
+	transform: translate(-50%,-60%);
+
+	&__input
+	{	
+		padding-left: $px-15;
+		margin-right: $px-15;
+		height: $px-50;
+		width: $px-400;
+		border: 1px solid $white ;
+		background-color: rgba(0,0,0,0.4);
+		border-radius: $px-3; /*remain same*/
+		outline: none;	
+		color: $white;
+		
+		&::placeholder
+		{	
+			color: $white;
+		}
+	}
+	
+}
+

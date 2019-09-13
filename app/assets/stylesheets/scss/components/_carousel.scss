@@ -1,0 +1,25 @@
+.carousel
+{	
+	color: white;
+	&__image
+	{
+		width: 100%;
+		height: auto;
+	}
+
+	&__image-container
+	{	
+		height: calc(100vh - 116px);
+	}
+
+	&__text
+	{
+  		position: absolute;
+  		top: 30%;
+  		left: 50%;
+  		transform: translate(-50%, -30%);
+  		font-size: $px-43;
+  		text-transform: uppercase;
+  		letter-spacing: $px-3;
+	}
+}

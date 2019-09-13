@@ -45,7 +45,9 @@
 			max-width: 38px;
 		}
 	}
-	@if $show-header-bg{
+
+	@if $show-header-bg
+	{
         &#header-bg{
             background: $header-bg;
             position: fixed;
