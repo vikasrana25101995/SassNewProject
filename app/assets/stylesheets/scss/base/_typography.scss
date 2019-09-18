@@ -1,5 +1,19 @@
-@include font('Intro','normal', 'normal');
-
+@include font('Intro', '/assets/fonts/Intro','normal', 'normal');
+@include font('Intro-head-b','/assets/fonts/IntroHeadB-Base','normal', 'normal');
+@include font('Intro-head-r','/assets/fonts/IntroHeadR-Base','normal', 'normal');
+@include font('Din-reg','/assets/fonts/DINPro-Regular','normal', 'normal');
+@include font('Din-med','/assets/fonts/DINPro-Medium','500', 'normal');
+@include font('Din-bold','/assets/fonts/DINPro-Bold','bold', 'normal');
+@include font('Life-hack','/assets/fonts/Lifehack-Regular','normal', 'normal');
+body{
+    font-family: "Intro-head-b"
+}
 h1{
-	font-family: 'Intro';
+    font-family: "Din-bold";
+}
+a{
+    font-family: "Din-med";
+}
+p{
+    font-family: "Intro-head-b";
 }
