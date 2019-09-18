@@ -83,6 +83,18 @@
 		transform-origin:     $origin;
 }
 
+@mixin font($font-family, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: url(base/Intro.eot);
+    src: url(base/Intro.eot?#iefix) format('embedded-opentype'),
+         url(base/Intro.woff) format('woff'),
+         url(base/Intro.ttf) format('truetype'),
+         url(base/Intro.svg#aller) format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
 
 
 
