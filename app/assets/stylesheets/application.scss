@@ -3,6 +3,7 @@
 @import 'scss/abstracts/mixins';
 
 @import 'scss/vendors/bootstrap';
+@import 'scss/vendors/font-awesome';
 
 @import 'scss/base/typography';
 
@@ -15,9 +16,12 @@
 @import 'scss/components/buttons';
 @import 'scss/components/carousel';
 @import 'scss/components/slider';
+@import 'scss/components/input_fields';
+
 
 @import 'scss/pages/home';
 @import 'scss/pages/about';
 @import 'scss/pages/contact';
+@import 'scss/pages/common';
 
 @import 'scss/themes/theme';

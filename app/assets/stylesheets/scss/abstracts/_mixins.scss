@@ -85,5 +85,27 @@
 
 
 
+@mixin size($size) {
+	@if $size == small {
+		@media #{$small} { @content; }
+	} @else if $size == medium {
+		@media #{$medium} { @content; }
+	} @else if $size == large {
+		@media #{$large} { @content; }
+	} @else if $size == extra_large {
+		@media #{$extra_large} { @content; }
+	} @else if $size == min_576 {
+		@media #{$min_576} { @content; }
+	} @else if $size == min_576_max_767 {
+		@media #{$min_576_max_767} { @content; }
+	} @else if $size == min_768{
+		@media #{$min_768} { @content; }
+	} @else if $size == max_575 {
+		@media #{$max_575} { @content; }
+	}
+}
+
+
+
 
 

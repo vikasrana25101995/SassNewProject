@@ -1,0 +1,89 @@
+.contact_us {
+
+    .bg_image {
+    	background-size: cover;
+    	height: 645px;
+
+    	@include size(extra_large){
+    		background-image: $contact_us_bg;
+    	}
+    	@include size(large){
+    		background-image: $contact_us_bg_tabs;
+    	}
+    	@include size(medium){
+    		background-image: $contact_us_bg_tab;
+    	}
+    	@include size(small){
+    		background-image: $contact_us_bg_mobile;
+    	}
+
+        .contactus_form {
+            margin-top: 60px;
+            padding: 25px 20px 20px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 2px 2px 20px 0 rgba(0,0,0,0.05);
+            background-color: rgba(255,255,255,0.6);
+            
+            @include size(max_575){
+                max-width: 300px;
+            }
+            @include size(min_576){
+                width: 360px;
+            }
+            @include size(min_768){
+                width: 650px;
+
+                .m-l-5{
+                    margin-left: 5px;
+                }
+                .m-r-5{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.contactus_banner {
+    padding-bottom: 50px;
+    .banner {
+        box-shadow: 2px 2px 20px 0 rgba(0,0,0,0.05);
+        padding: 25px;
+        background-color: rgba(255,255,255,0.6);
+
+        p {
+            margin-bottom: 0px;
+        }
+        .heading {
+            color: #aebc46;
+        }
+        margin-bottom: 50px;
+    }
+    @include size(min_768){
+        .m-r-15-b {
+            margin-right: 15px;
+        }
+        .m-l-15-b {
+            margin-left: 15px;
+        }
+    }
+}
+.subscribe {
+    .m-r-10 {
+        margin-right: 10px;
+    }
+    .w-sm-60 {
+        @include size(small) {
+            max-width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+
+            h2 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 12px;
+            }
+        }
+    }
+}

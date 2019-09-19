@@ -33,6 +33,10 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
+
+  RECAPCHA_SITE_KEY = '6Lex-pIUAAAAAOrbOO2LE4EXWIoe9QEVTLfimph1'
+  RECAPCHA_SECRET_KEY = '6Lex-pIUAAAAAP5hoE1e3cHwJHsAL65QcE7UneRJ'
+
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.

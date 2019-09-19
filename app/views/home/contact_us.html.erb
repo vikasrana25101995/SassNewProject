@@ -1,0 +1,111 @@
+<div class="bg_color">
+	<div class="container" >
+		<div class="contact_us">
+			<div class="bg_image">
+				<div class="d-flex flex-column justify-content-center">
+				    <%= form_with url: "", :class => "contactus_form" do |f|%>
+				      	<div class="text-center m-b-15">
+				      		<h3>GET IN TOUCH</h3>
+				      	</div>
+				        <div class="m-b-10">
+				          <%= f.text_field :name, 
+				            :placeholder => "Name", 
+				            :class => "input_width", 
+				            :required => true %>
+				        </div>
+				        <div class="d-md-flex">
+					        <div class="m-b-10 w-100 m-r-5">
+					          <%= f.text_field :amount, 
+					            :placeholder => "Contact Number (Optional)", 
+					            :class => "input_width", 
+					            required: true %>
+					        </div>
+					        <div class="m-b-10 w-100 m-l-5">
+					          <%= f.text_field :name, 
+					            :placeholder => "Email Address", 
+					            :class => "input_width", 
+					            :required => true %>
+					        </div>
+				        </div>
+				        <div class="m-b-10">
+				          <%= f.text_area :amount, 
+				            :placeholder => "Message", 
+				            :class => "", 
+				            required: true %>
+				        </div>
+				        <div class="m-b-15" style="max-width: 260px">
+				        	<%= recaptcha_tags %>
+				        </div>
+				        
+				        <div class="m-b-10 text-center">
+							<button class="btn btn_submit">
+								Submit
+							</button>
+				        </div>
+				    <% end %>				    
+				</div>
+			</div>
+		</div>
+		<div class="contactus_banner">
+			<div class="d-md-flex">
+				<div class="banner text-center m-r-15-b">
+					<div class="icon m-b-15" >
+						<i class="fab fa-accessible-icon"></i>
+					</div>
+					<div class="text m-b-10">
+						If you want to talk to us about the website or any queries relating to your order
+					</div>
+					<div class="heading m-b-10">
+						<strong> Please call our Head Office on </strong>
+					</div>
+					<div class="info">
+						<strong>
+							<p> 02085556567</p>
+							<p> 10am-5pm, Monday to Friday only </p>
+						</strong>
+					</div>
+				</div>
+				<div class="banner text-center m-l-15-b">
+					<div class="icon m-b-15" >
+						<i class="fab fa-accessible-icon"></i>
+					</div>
+					<div class="text m-b-10">
+						If you want to talk to us about the website or any queries relating to your order
+					</div>
+					<div class="heading m-b-10">
+						<strong> Please call our Head Office on </strong>
+					</div>
+					<div class="info">
+						<strong>
+							<p> 02085556567</p>
+							<p> 10am-5pm, Monday to Friday only </p>
+						</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="subscribe">
+			<div class="text-center">
+				<div class="w-sm-60 text-center">
+					<h2 class="m-b-10">
+						FRIENDS WITH FIREZZA
+					</h2>
+					<h5 class="m-b-15">
+						Hear about our food, openings and offers. We'll fill your stomach, not your inbox.
+					</h5>
+				</div>
+				<div class="d-flex justify-content-center" >
+					<div class="d-md-flex m-w-600">
+						<input type="" name="" class="m-r-10 m-b-10" />
+						<button class="btn_submit m-b-10 flex-sm-grow-1 w-sm-100">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+

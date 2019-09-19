@@ -7,3 +7,16 @@
 	padding: 4px 20px;
 	text-transform: uppercase;
 }
+.btn_submit {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #aebc46;
+    height: 50px;
+    border-radius: 3px;
+}
+
+@include size(small){
+	.w-sm-100 {
+		width: 100%;
+	}
+}
