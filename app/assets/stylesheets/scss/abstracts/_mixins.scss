@@ -1,6 +1,7 @@
 /*** Transition ***/
 
 @mixin transition($transition...){
+	@debug($transition);
 	-moz-transition:  	$transition;
 	-o-transition:    	$transition;
 	-webkit-transition: $transition;
@@ -49,18 +50,6 @@
   }
 }
 
-
-//Transform Origin
-
-@mixin transform-origin($origin){
-	-webkit-transform-origin: $origin;
-	-moz-transform-origin:    $origin;
-	-ms-transform-origin:     $origin;
-		transform-origin:     $origin;
-}
-
-
-
 @mixin size($size) {
 	@if $size == small {
 		@media #{$small} { @content; }
@@ -83,7 +72,7 @@
 
 
 //Text-field
-@mixin text-field($background-color, $border:null, $color:null, $border-radius:null) {
+@mixin text-field($background-color, $border:null, $color:null, $border-radius:null, $box-shadow:null) {
   display: inline-block;
   outline: none;
   width: 100%;
@@ -95,6 +84,6 @@
   border: $border;
   color: $color;
   @include border-radius($border-radius);
-  @include box-shadow(2px, 2px, 20px, rgba($black, $background-opacity));
+  @include box-shadow($box-shadow));
   @include transition(all linear 0.3s);
 }
