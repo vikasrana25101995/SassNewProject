@@ -1,6 +1,8 @@
 /*** Colors ***/
 $white:  #fff !default;
 $black:  #111618 !default;
+$light-black: rgba($black, .55);
+$background-opacity: 0.9;
 
 /*** Create grayscale ***/
 $gray-dark: #292b2c !default;
@@ -14,21 +16,11 @@ $brand-primary: $green;
 $link-color: $white;
 $body-bg: $gray-dark;
 
-
 /**** Font Sizes ***/
+
 $font-size: 16px !default;
+
 /*******************/
-
-
-/******* Width ********/
-	$px-3: 3px;
-	$px-15: 15px;
-	$px-43: 43px;
-	$px-50: 50px;
-	$px-150: 150px;
-	$px-400: 400px; 
-/**********************/
-
 
 $show-header-bg:true;
 $header-bg: url('/assets/bg/header140.png');

@@ -1,4 +1,4 @@
-@include font('Intro', '/assets/fonts/Intro','normal', 'normal');
+@include font('Intro-reg', '/assets/fonts/Intro','normal', 'normal');
 @include font('Intro-head-b','/assets/fonts/IntroHeadB-Base','normal', 'normal');
 @include font('Intro-head-r','/assets/fonts/IntroHeadR-Base','normal', 'normal');
 @include font('Din-reg','/assets/fonts/DINPro-Regular','normal', 'normal');
@@ -6,14 +6,24 @@
 @include font('Din-bold','/assets/fonts/DINPro-Bold','bold', 'normal');
 @include font('Life-hack','/assets/fonts/Lifehack-Regular','normal', 'normal');
 body{
-    font-family: "Intro-head-b"
+    font-family: "Intro-head-r";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-smooth: always;
 }
 h1{
-    font-family: "Din-bold";
+    font-family: "intro-reg";
 }
-a{
-    font-family: "Din-med";
+a, button{
+    font-family: "Intro-reg";
 }
 p{
     font-family: "Intro-head-b";
+}
+input::placeholder{
+	font-family: "Intro-head-b";
+}
+input{
+	 font: 18px/100% Intro-head-b;
 }

@@ -1,15 +1,6 @@
-.homepage{
-	&__header{
-		height: 116px;
-	}
-	&__content{
-		position:relative;
-		top: -15px;
-	}
-}
 .navbar{
 	background-color: $black;
-
+	
 	&-brand{
 		color: $brand-primary;
 		font-size: $font-size*1.5;
@@ -29,23 +20,19 @@
 		color: $white;
 		position:relative;
 
-		&:after, &:before{
-			position: absolute;
-		    content: '';
-		    left: 0;
-		    bottom:0;
-		    height: 100%;
-		    width: 100%;
-		    border-bottom: 1px solid #fff;
-		    @include translate3d(0, 1, 1);
-		    @include transform-origin(center);
-		    @include transition(all 1s);
-		    opacity: 0;
+		&:after{
+		  content: '';
+		  display: block;
+		  margin: auto;
+		  height: 2px;
+		  width: 0px;
+		  background: transparent;
+		  @include transition(width .5s linear, background .5s linear);
+		
 		}
-		&:hover:after, 
-		&:hover:before{
-			@include translate3d(1,1,1);
-			opacity: 1;
+		&:hover:after{
+			width: 100%;
+			background: $white;
 		}
 		&.cart-icon:hover:before,
 		&.cart-icon:hover:after{
@@ -54,14 +41,24 @@
 		&.cart-icon img{
 			max-width: 38px;
 		}
+		&.btn-success{
+			background-color : $brand-primary;
+			color: $black;
+			border-color: $brand-primary;
+			padding: 13px 54px;
+			@include border-radius(3px);
+			
+			&::after{
+				display: none;
+			}
+		}
 	}
 
-	@if $show-header-bg
-	{
+	@if $show-header-bg{
         &#header-bg{
             background: $header-bg;
             position: fixed;
-		    z-index: 1;
+		    z-index: 999;
 		    width: 100%;
 		    height: 116px;
 		    padding: 0 30px;

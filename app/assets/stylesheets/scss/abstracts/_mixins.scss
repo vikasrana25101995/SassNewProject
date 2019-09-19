@@ -7,82 +7,6 @@
 		transition: $transition;
 }
 
-@mixin transition-property($property...){
-	-moz-transition-property: 	 $property;
-	-o-transition-property: 	 $property;
-	-webkit-transition-property: $property;
-		transition-property: 	 $property;
-}
-
-@mixin transition-duration($duration...){
-	-moz-transition-duration: 	 $duration;
-	-o-transition-duration: 	 $duration;
-	-webkit-transition-duration: $duration;
-			transition-duration: $duration;
-}
-
-@mixin transition-timing-function($timing...){
-	-moz-transition-timing-function: 	 $timing;
-	-o-transition-timing-function: 	     $timing;
-	-webkit-transition-timing-function:  $timing;
-			transition-timing-function:  $timing;
-}
-
-@mixin transition-delay($delay...){
-	-moz-transition-delay: 	  $delay;
-	-o-transition-delay: 	  $delay;
-	-webkit-transition-delay: $delay;
-			transition-delay: $delay;
-}
-
-
-/*** Transform ***/
-
-@mixin transform($transforms){
-	-webkit-transform: $transforms;
-	-o-transform: 	   $transforms;
-	-webkit-transform: $transforms;
-	-ms-transform:     $transforms;
-		transforms:    $transforms;
-}
-
-//Rotate
-
-@mixin rotate($deg){
-	@include transform(rotate(#{$deg}deg));
-}
-
-//Scale
-
-@mixin scale($scale){
-	@include transform(scale($scale));
-}
-
-//Translate
-
-@mixin translate($x, $y){
-	@include transform(translate($x, $y));
-}
-
-//Translate 3d
-@mixin translate3d($x, $y, $z){
-	@include transform(translate3d($x, $y, $z));
-}
-
-//Skew
-@mixin skew($x, $y){
-	@include transform(skew(#{$x}deg, #{$y}deg));
-}
-
-//Transform Origin
-
-@mixin transform-origin($origin){
-	-webkit-transform-origin: $origin;
-	-moz-transform-origin:    $origin;
-	-ms-transform-origin:     $origin;
-		transform-origin:     $origin;
-}
-
 @mixin font($font-family, $font-url, $font-weight, $font-style) {
   @font-face {
     font-family: $font-family;
@@ -96,6 +20,49 @@
   }
 }
 
+/*** Text Shadow ***/
+@mixin text-shadow($x1: 2px, $y1: 2px, $blur1: 10px, $color1: $black, $x2: null, $y1: null, $blur2: null, $color2: null){
+	@if($x2){
+		text-shadow: $x1 $y1 $blur1 $color1, $x2 $y2 $blur2 $color2;
+	}
+	@else{
+		text-shadow: $x1 $y1 $blur1 $color1;
+	}
+}
+
+//Border Radius
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+//Box Shadow 
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
 
 
-
+//Text-field
+@mixin text-field($background-color, $border:null, $color:null, $border-radius:null) {
+  display: inline-block;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  background-color: $background-color;
+  border: $border;
+  color: $color;
+  @include border-radius($border-radius);
+  @include box-shadow(2px, 2px, 20px, rgba($black, $background-opacity));
+  @include transition(all linear 0.3s);
+}
