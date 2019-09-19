@@ -1,26 +1,13 @@
-
-
-	<div class="home-page">
-
-		<div class="home-page__header">
-			<%=render partial: "/header/partial/header"%>
-		</div>
-
-		<div class="home-page__content">
-
-			<%=render partial: "/carousel/partial/carousel"%>
-			
-			<div class="order-placed d-flex flex-row">
-				<div class="input">
-					<input class="order-placed__input"type="text" placeholder="Enter Postal code to find a nearby store" />
-				</div>
-				
-				<div class="button-container">
-					<button class="button">Order Now</button>
-				</div>
-			</div>
-
-			<%=render partial: "/footer/partial/footer"%>
-			
-		</div>
+<div class="homepage">
+	<div class="homepage__header">
+		<%=render partial: "/header/partial/header"%>
 	</div>
+
+	<div class="homepage__content">
+
+		<%=render partial: "/carousel/partial/carousel"%>
+
+		<%=render partial: "/footer/partial/footer"%>
+		
+	</div>
+</div>

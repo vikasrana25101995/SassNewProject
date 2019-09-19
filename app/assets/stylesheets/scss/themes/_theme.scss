@@ -1,0 +1,17 @@
+*, html, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+p{
+	margin-bottom: 0px;
+}
+input{
+	outline: none;
+	@include text-field(transparent, none, $white, 3px);
+
+}
