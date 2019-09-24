@@ -10,8 +10,3 @@ a, a:hover{
 p{
 	margin-bottom: 0px;
 }
-input{
-	outline: none;
-	@include text-field (transparent, none, $white);
-
-}

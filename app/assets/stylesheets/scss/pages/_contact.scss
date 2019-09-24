@@ -68,22 +68,3 @@
         }
     }
 }
-.subscribe {
-    .m-r-10 {
-        margin-right: 10px;
-    }
-    .w-sm-60 {
-        @include size(small) {
-            max-width: 70%;
-            margin-right: auto;
-            margin-left: auto;
-
-            h2 {
-                font-size: 18px;
-            }
-            h5 {
-                font-size: 12px;
-            }
-        }
-    }
-}

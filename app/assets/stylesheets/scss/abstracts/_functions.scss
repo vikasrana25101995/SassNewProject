@@ -1,0 +1,8 @@
+@function set-header($class){
+	@debug($class);
+	@if($class == fixed-header){
+
+	}
+	@else{
+	}
+}
