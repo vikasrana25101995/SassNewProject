@@ -26,10 +26,10 @@
             background-color: rgba(255,255,255,0.6);
             
             @include size(max_575){
-                max-width: 300px;
+                max-width: 290px;
             }
             @include size(min_576){
-                width: 360px;
+                width: 345px;
             }
             @include size(min_768){
                 width: 650px;
@@ -41,6 +41,10 @@
                     margin-right: 5px;
                 }
             }
+            .captcha_container {
+                display: flex; 
+                overflow-x: auto;
+            }
         }
     }
 }
@@ -50,6 +54,7 @@
         box-shadow: 2px 2px 20px 0 rgba(0,0,0,0.05);
         padding: 25px;
         background-color: rgba(255,255,255,0.6);
+        width: 100%;
 
         p {
             margin-bottom: 0px;
