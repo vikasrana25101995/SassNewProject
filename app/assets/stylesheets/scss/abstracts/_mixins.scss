@@ -51,7 +51,7 @@
 
 
 //Text-field
-@mixin text-field($background-color, $border:null, $color:null, $border-radius:null, $width: 100%) {
+@mixin text-field($background-color, $border:null, $color:null, $border-radius:null, $width:100%) {
   display: inline-block;
   outline: none;
   width: $width;
