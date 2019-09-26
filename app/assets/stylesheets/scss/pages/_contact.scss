@@ -45,6 +45,13 @@
                 display: flex; 
                 overflow-x: auto;
             }
+            input{
+                margin-right: 10px;
+                @include text-field($white, 1px solid $gray, $black, 3px, 100%);
+                @include input-placeholder {
+                    color: $light-black;
+                }
+            }
         }
     }
 }
