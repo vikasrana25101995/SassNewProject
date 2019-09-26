@@ -5,8 +5,8 @@ $light-black: rgba($black, .55);
 $background-opacity: 0.9;
 
 /*** Create grayscale ***/
-$gray-dark: #292b2c !default;
-$gray: #464a4c !default;
+$gray-dark: #f4f4f2 !default;
+$gray: #d6d6d6 !default;
 $gray-light: #636c72 !default;
 $gray-lighter: #eceeef !default;
 $gray-lightest: #f7f7f9 !default;
@@ -24,7 +24,6 @@ $font-size: 16px !default;
 
 $show-header-bg:true;
 $header-bg: url('/assets/bg/header140.png');
-
 
 
 /************	CONTACT	US   *************/

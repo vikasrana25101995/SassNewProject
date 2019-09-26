@@ -1,4 +1,18 @@
 .footer
 {
-	
+	&__subscribe{
+		padding: 40px 0px;
+		background-color: $gray-dark;
+	}
+	input{
+		margin-right: 10px;
+		@include text-field($white, 1px solid $gray, $black, 3px, 457px);
+		@include input-placeholder{
+			color: $light-black;
+		}
+	}
+	&__links{
+		background-color: $black;
+		color: $white;
+	}
 }

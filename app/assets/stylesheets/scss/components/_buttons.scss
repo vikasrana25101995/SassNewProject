@@ -1,9 +1,8 @@
-.button
-{
-	background-color: $green;
-	border-radius: 3px;
-	padding: 4px 20px;
-	text-transform: uppercase;
+.button-green{
+	@include button(
+		$width: 160px, 
+		$height: 50px
+	);
 }
 .btn_submit {
     padding-left: 60px;
@@ -12,6 +11,7 @@
     height: 50px;
     border-radius: 3px;
 }
+
 
 @include size(small){
 	.w-sm-100 {
