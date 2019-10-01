@@ -1,0 +1,59 @@
+.location {
+	padding-top: 90px;
+
+	.sub_header {
+		width: 100%;
+		height: 105px;
+		background-size: cover; 
+		background-position: center right;
+		background-image: $sub_header;
+	}
+	.location_items {
+		height: 700px;
+		width: 100%;
+		margin: 20px 0;
+
+		.store_list {
+			height: inherit;
+
+			@include size(medium){
+	    		width: 100%;
+	    	}
+	    	@include size(min_1024){
+	    		min-width: 40%;
+	    	}
+
+	    	&_delivery {
+	    		margin-bottom: 20px;
+	    		border-style: dashed;
+	    		border-width: thin;
+	    		height: 60px;
+	    		border-color: #979797;
+	    		@include border-radius(3px);
+	    	}
+	    	.d-inline-flex {
+	    		width: 100%;
+	    	}
+
+	    	&_search {
+		    	& input {
+		    		margin-right: 10px;
+	                @include text-field($white, 1px solid $gray, $black, 3px, 100%);
+	                @include input-placeholder {
+	                    color: $light-black;
+	                }
+		    	}
+		    }
+		    .detail {
+		    	height: 550px;
+		    	width: 100%;
+		    	overflow: auto;
+		    }
+		}
+		.map_container {
+			background-color: green;
+			height: inherit;
+			width: 100%;
+		}
+	}
+}

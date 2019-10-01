@@ -122,5 +122,7 @@
 		@media #{$min_768} { @content; }
 	} @else if $size == max_575 {
 		@media #{$max_575} { @content; }
-	}
+	} @else if $size == min_1024 {
+    @media #{$min_1024} { @content; }
+  }
 }
