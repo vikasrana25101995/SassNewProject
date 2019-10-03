@@ -12,7 +12,31 @@
 		}
 	}
 	&__links{
+		padding: 40px 0px;
 		background-color: $black;
 		color: $white;
+
+		ul li{
+			display: inline-block;
+			padding: 10px 30px;
+			
+			a{
+				text-decoration: none;
+				color: $white;
+				font-size: 20px;
+				font-family: 'Intro-head-b';
+			}	
+		}
+	}
+	&--logo img{
+		max-width: 150px;
+		margin-bottom: 40px;
+	}
+	&--sociallinks ul li .fa{
+		@include border-radius(50px);
+		width: 35px;
+		height: 35px;
+		border: 1px solid $white;
+		padding: 7px;
 	}
 }
