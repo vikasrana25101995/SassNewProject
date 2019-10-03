@@ -24,18 +24,19 @@
 	    	}
 
 	    	&_delivery {
-	    		margin-bottom: 20px;
 	    		border-style: dashed;
 	    		border-width: thin;
 	    		height: 60px;
 	    		border-color: #979797;
 	    		@include border-radius(3px);
+	    		@extend %m-b-20;
 	    	}
 	    	.d-inline-flex {
 	    		width: 100%;
 	    	}
 
 	    	&_search {
+	    		@extend %m-b-20;
 		    	& input {
 		    		margin-right: 10px;
 	                @include text-field($white, 1px solid $gray, $black, 3px, 100%);
@@ -44,10 +45,28 @@
 	                }
 		    	}
 		    }
-		    .detail {
+		    &_detail {
 		    	height: 550px;
 		    	width: 100%;
 		    	overflow: auto;
+
+		    	& > div {
+		    		margin-bottom: 10px;
+		    		& > div {
+		    			background-color: #f4f4f2;
+			    		padding: 10px 10px 20px;
+			    		@include border-radius(3px)
+		    		}
+		    	}
+		    	.show_timing {
+		    		display: none;
+		    	}
+		    	[type="radio"]:checked ~ .show_timing {
+		    		display: block;
+		    		height: auto;
+		    		/*transition: all .3s ease-in-out;*/
+		    	}
+
 		    }
 		}
 		.map_container {
