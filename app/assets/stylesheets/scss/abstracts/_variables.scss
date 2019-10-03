@@ -33,9 +33,14 @@ $contact_us_bg_tabs: url('/assets/bg/contactus_Ipad_1024.png');
 $contact_us_bg_tab: url('/assets/bg/contactus_Ipad_768.png');
 
 
+/************** 	LOCATION 	**************/
+$sub_header: url('/assets/bg/subheader-image.png');
+
+
 /*SCREEN SIZE */
 $extra_large: "(min-width: 1200px)";
 $large: "(max-width: 1199px) and (min-width: 1024px)";
+$min_1024: "(min-width: 1024px)";
 $medium: "(max-width: 1023px) and (min-width: 768px)";
 $min_768: "(min-width: 768px)";
 $small: "(max-width: 767px)";

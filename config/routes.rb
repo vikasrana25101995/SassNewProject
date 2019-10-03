@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   get "contact_us" => "home#contact_us"
+  get "location" => "home#location"
 end
