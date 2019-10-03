@@ -15,3 +15,6 @@ input{
 	outline: none;
 	@include text-field (transparent, none, $white);
 }
+button:focus {
+  outline: none;
+}
